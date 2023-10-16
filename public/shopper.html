@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper-template</title>
+    <link rel="stylesheet" href = "node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            font-size:25px;
+            font-family:Arial;
+            display : flex;
+            justify-content:space-between;
+            padding:15px;
+
+        }
+        .brand-title{
+            font-size: 30px;
+            font-weight:bold;
+
+        }
+        nav span{
+            margin-right:15px;
+        }
+        .count{
+            background-color:red;
+            color:black;
+            padding:3px;
+            width:25px;
+            display:inline-block;
+            border-radius:25px;
+            text-align:center;
+            font-size:15px;
+
+        }
+
+        article{
+            background-color:grey;
+            color:white;
+            text-align:center;
+            font-size:20px;
+            padding:20px;
+
+        }
+        .bi-lightning-fill{
+            color:gold;
+
+        }
+        
+       
+        .box{
+            display:grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .b1{
+            height:60px;
+            width:250px;
+            font-size: 30px;
+            font-family: aerial;
+            font-weight: bold;
+            border:none;
+            background-color: grey;
+            color:white;
+            margin-left: 500px;
+            margin-top:50px;
+        }
+        .b2{
+            height:60px;
+            width:250px;
+            font-size: 30px;
+            font-family: aerial;
+            font-weight: bold;
+            border:none;
+            background-color: grey;
+            color:white;
+            margin-top:50px;
+            margin-left: 5px;
+
+        }
+        footer {
+                display: grid;
+                grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+                padding: 20px;
+                background-color: black;
+                color:white;
+                font-family: Arial;
+            }
+            .footer-brand-name {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .footer-title {
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .footer-title~span {
+                display: block;
+                margin-bottom: 15px;
+            }
+            aside span {
+                margin-right: 5px;
+                font-size: 20px;
+            }
+            .women-fashion {
+                background-image: url("public/images/women1.jpeg");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+            }
+            .men-fashion {
+                background-image: url("public/images/men.jpg");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+            }
+            .kids-fashion {
+                background-image: url("public/images/children.jpg");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+            }
+            .kids-fashion:hover {
+                opacity: 1;
+            }
+            .women-fashion:hover {
+                opacity: 1;
+            }
+            .men-fashion:hover {
+                opacity: 1;
+            }
+            main {
+                height: 500px;
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+                grid-gap: 4px;
+                margin-top: 5px;
+            }
+            .card-title {
+                font-size: 50px;
+                font-weight: bold;
+                color:white;
+                text-shadow: 2px 2px 2px black;
+            }
+            button {
+                width: 200px;
+                height: 50px;
+                font-size: 20px;
+                background-color: white;
+                border:none;
+                margin-top: 150px;
+            }
+            .one{
+                display:grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr;
+                text-align: center;
+                margin-top: 15px;
+                
+            }
+           .three{
+            color:grey;
+            font-family: aerial;
+            line-height: 50px;
+           }
+          .first{
+            font-size: 20px;
+            font-weight: bold;
+            color:grey;
+            text-align: center;
+            margin-top: 60px;
+          }
+           .second{
+            font-size: 50px;
+            font-weight: bold;
+            font-family: aerial;
+            text-align: center;
+           }
+           pre{
+            font-size: 20px;
+            font-family: aerial;
+            font-weight:bold;
+            text-align: center;
+            color:darkgray;
+            margin-bottom: 60px;
+
+           }
+           .card1{
+            background-image: url("public/images/shirts1.jpg");
+            background-size: cover;
+            height:500px;
+            width:500px;
+            align-items: center;
+            font-size: 30px;
+            font-family: aerial;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px grey;
+            text-align: center;
+            margin-bottom: 10px;
+            
+           }
+           .card2{
+            background-image: url("public/images/bags1.jpeg");
+            background-size: cover;
+            height:500px;
+            width:500px;
+            font-size: 30px;
+            font-family: aerial;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px grey;
+            margin-bottom: 10px;
+           
+            text-align: center;
+           }
+           section{
+            height:auto;
+           }
+           .main-card{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-left: 200px;
+            }
+            .card3{
+            background-image: url("public/images/sweat.jpg");
+            background-size: cover;
+            height:500px;
+            width:500px;
+            align-items: center;
+            font-size: 30px;
+            font-family: aerial;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px grey;
+            text-align: center;
+            
+           }
+           .card4{
+            background-image: url("public/images/women.jpg");
+            background-size: cover;
+            height:500px;
+            width:500px;
+            font-size: 30px;
+            font-family: aerial;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px grey;
+            text-align: center;
+           }
+           .main-card2{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-left: 200px;
+            
+            }
+            .heading{
+                font-size: 45px;
+                font-family: aerial;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 50px;
+            }
+            .banner1{
+                display: grid;
+                border:2px solid black;
+                height:500px;
+                width:350px;
+                
+            }
+            .banner{
+                display:grid;
+                grid-template-columns: 4fr 4fr 4fr 4fr;
+                grid-gap:2px;
+                margin-top: 20px;
+                
+            }
+            .banner-header{
+                background-image: url("public/images/watches.jpeg");
+                background-size: cover;
+                height:440px;
+            }
+            .banner-header2{
+                background-image: url("public/images/bag.jpg");
+                background-size: cover;
+                height:440px;
+                background-color: aqua;
+            }
+            .banner-header3{
+                background-image: url("public/images/womenbags.jpeg");
+                background-size: cover;
+                height:440px;
+            }
+             .banner-header4{
+                background-image: url("public/images/menshoes.jpg");
+                background-size: cover;
+                height:440px;
+            }
+            .foot{
+                font-size: 25px;
+                font-family: aerial;
+                font-weight: bold;
+                background-color: lightslategray;
+            }
+    
+           
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class = "brand-title">Shopper</span>
+            </div>
+                
+            <div>
+                <nav>
+                <span>Home</span>
+                <span>catelog</span> 
+                <span>shop</span>
+                <span>pages</span>
+                <span>blogs</span>
+                <span>Docs</span>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <span class = "bi bi-search"></span>
+                    <span class = "bi bi-person"></span>
+                    <span class = "bi bi-heart"></span>
+                    <span class = "bi bi-cart3"><span class ="count">3</span></span>
+                </nav>
+
+            </div>
+        </header>
+        
+        <article>
+            
+            <span class = "bi bi-lightning-fill">
+            </span>
+            <span>happy holidays deals on everythings </span>
+            <span class = "bi bi-lightning-fill"></span>
+        
+        </article>
+        <section>
+            <main>
+                <div class="women-fashion">
+                    <div class="card">
+                        <div class="card-title">
+                            Women
+                        </div>
+                        <div class="card-footer">
+                            <button>
+                                Shop Women <span class="bi bi-arrow-right"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="men-fashion">
+                  <div class="card">
+                    <div class="card-title">
+                        Men
+                    </div>
+                    <div class="card-footer">
+                        <button>
+                            Shop Men <span class="bi bi-arrow-right"></span>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kids-fashion">
+                   <div class="card">
+                    <div class="card-title">
+                        Kids
+                    </div>
+                    <div class="card-footer">
+                        <button>
+                            Shop Kids <span class="bi bi-arrow-right"></span>
+                        </button>
+                    </div>
+                   </div>
+                </div>
+            </main>
+            <div class="one">
+            <div class="two">
+                <span class="bi bi-truck-flatbed">FREE SHIPPING<br></span>
+                <span class="three">From all order for 100$</span>
+
+            </div>
+            <div class="two">
+                <span class="bi bi-arrow-left-right">FREE RETURNS<br></span>
+                <span class="three">Return money with in 30days</span>
+
+            </div>
+            <div class="two">
+                <span class="bi bi-lock-fill">SECURE SHOPPING<br></span>
+                <span class="three">You are in safe hands</span>
+            </div>
+            <div class="two">
+                <span class="bi bi-tags">OVER 10,000 STYLES<br></span>
+                <span class="three">We have every thing you need</span>
+
+            </div>
+            </div>
+            <div class="first"> New Collections</div>
+            <div class="second">Best price 2023</div>
+            <pre>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,
+             above fly brought Very green.</pre>
+
+          <div class="main-card">
+            <div class="card1">
+                <div>Shirts Collections<span class="bi bi-arrow-right"></span></div>
+            
+            </div>
+            <div class="card2">
+                <div>Bags Collections<span class="bi bi-arrow-right"></span></div>
+            
+            </div>
+          </div>
+          <div class="main-card2">
+            <div class="card3">
+                <div>SweatShirts Collection<span class="bi bi-arrow-right"></span></div>
+
+            </div>
+            <div class="card4">
+                <div>Women dress Collection<span class="bi bi-arrow-right"></span></div>
+
+            </div>
+          </div>
+          <div class="bottom">
+          <div class="heading">Top Month Sellers</diV>
+          </div>
+         <div class="banner">
+            <div class="banner1">
+                <div class="banner-header">
+                </div>
+                <div class="banner-footer">
+                </div>
+                <div class="foot">watches for mens</div>
+                    <div class="foot">129$</div>
+             </div>
+            <div class="banner1">
+                <div class="banner-header2"></div>
+                <div class="foot">Gucci Handbags</div>
+                <div class="foot">99$</div>
+  
+            </div>
+            <div class="banner1">
+                <div class="banner-header3"></div>
+                <div class="foot">Hands Bags for women</div>
+                <div class="foot">100$</div>
+  
+            </div>
+            <div class="banner1">
+                <div class="banner-header4"></div>
+                <div class="foot">Snaekers for mens</div>
+                <div class="foot">150$</div>
+              
+            </div>
+
+         </div>
+         
+           <div class="banner">
+              <div class="banner1">
+                  <div class="banner-header">
+                  </div>
+                  <div class="banner-footer">
+                  </div>
+                  <div class="foot">watches for mens</div>
+                      <div class="foot">129$</div>
+               </div>
+              <div class="banner1">
+                  <div class="banner-header2"></div>
+                  <div class="foot">Gucci Handbags</div>
+                  <div class="foot">99$</div>
+    
+              </div>
+              <div class="banner1">
+                  <div class="banner-header3"></div>
+                  <div class="foot">Hands Bags for women</div>
+                  <div class="foot">100$</div>
+    
+              </div>
+              <div class="banner1">
+                  <div class="banner-header4"></div>
+                  <div class="foot">Snaekers for mens</div>
+                  <div class="foot">150$</div>
+                
+              </div>
+              
+           </div>
+            
+    </section>
+        <footer>
+            <div>
+                <div class="footer-brand-name">Shopper</div>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                    <span class="bi bi-youtube"></span>
+                </aside>
+            </div>
+            <div>
+                <div class="footer-title">SUPPORT</div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+            </div>
+            <div>
+                <div class="footer-title">SHOP</div>
+                <span>Men's Shopping</span>
+                <span>Women's Shopping</span>
+                <span>Kids' Shopping</span>
+                <span>Discounts</span>
+            </div>
+            <div>
+                <div class="footer-title">COMPANY</div>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+            <div>
+                <div class="footer-title">CONTACT</div>
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+            </div>
+        </footer>
+</body>
+</html>
