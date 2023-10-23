@@ -10,7 +10,7 @@
 
      <style>
         body{
-            height:1000px;
+            height:auto;
             width:auto;
             background-color: lightblue;
         }
@@ -62,7 +62,12 @@
         button{
             background-color:grey;
         }
-
+        .carousel-button{
+            border: 2px solid black;
+            height: 100px;
+            width:50px;
+        }
+        
      </style>
 </head>
 <body>
@@ -124,10 +129,10 @@
                 <span class="ps-1 fw-bold">ALL</span>
             </div>
             <div class="second-row2 d-flex">
-                <div class="pe-2">Todays Deal</div>
-                <div class="pe-2">Customers Service</div>
-                <div class="pe-2">Registry</div>
-                <div class="pe-2">Gifts card</div>
+                <div class="pe-4">Todays Deal</div>
+                <div class="pe-4">Customers Service</div>
+                <div class="pe-4">Registry</div>
+                <div class="pe-4">Gifts card</div>
                 <div>sell</div>
             </div>
     
@@ -297,9 +302,50 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex p-4">
+                <div class="carousel slide carousel-dark" id="slideBanner">
+                    <div class="carousel-inner">
+                        <p class="fw-bold h4">Frequently repurchased in Supplies</p>
+                            <div class="carousel-item active">
+                            <img src="./images/supplies1.jpg" height="300" width="240">
+                            <img src="./images/supplies2.jpg" height="300" width="240">
+                            <img src="./images/supplies3.jpg" height="300" width="240">
+                            <img src="./images/supplies4.jpg" height="300" width="240">
+                            <img src="./images/supplies5.jpg" height="300" width="240">
+                            <img src="./images/supplies6.jpg" height="300" width="240">
+                          </div>
+                       
+                        <div class="carousel-item">
+                            <img src="./images/supplies7.jpg" height="300" width="240">
+                            <img src="./images/supplies8.jpg" height="300" width="240">
+                            <img src="./images/supplies9.jpg" height="300" width="240">
+                            <img src="./images/supplies10.jpg" height="300" width="240">
+                            <img src="./images/supplies11.jpg" height="300" width="240">
+                            <img src="./images/supplies12.jpg" height="300" width="240">
+
+
+                        </div>
+                       
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slideBanner">
+                        <span class=" carousel-button carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slideBanner">
+                        <span class=" carousel-button carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+            </div>
         </main>
 
     </section>
+    <login class="pe-5 pt-4">
+        <form align="center">
+            <p>See personalized recommendations</p>
+            <button class="btn btn-warning w-25">Sign in</button>
+            <p>New customer?<a href="">Sign in</a></p>
+        </form>
+    </login>
     <footer>
         <button class="btn btn-dark w-100 text-white"><a href="http://127.0.0.1:5500/my_portfolio/public/amazon.html" class="text-white">Back to top</a></button>
         <div class="foot d-flex p-5 justify-content-between text-white bg-dark">
