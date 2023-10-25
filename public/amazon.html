@@ -67,6 +67,9 @@
             height: 100px;
             width:50px;
         }
+        .con{
+            background-color:rgb(15, 196, 196);
+        }
         
      </style>
 </head>
@@ -339,12 +342,80 @@
         </main>
 
     </section>
-    <login class="pe-5 pt-4">
-        <form align="center">
-            <p>See personalized recommendations</p>
-            <button class="btn btn-warning w-25">Sign in</button>
+    <login align="center" class="p-5 me-5">
+        <p>See personalized recommendations</p>
+            <p><button class="btn btn-warning w-25" data-bs-target="#login" data-bs-toggle="modal">Sign in</button></p>
             <p>New customer?<a href="">Sign in</a></p>
-        </form>
+            <div class="modal fade" id="login">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-warning">
+                        <h3><span class="bi bi-person">User Login</span></h3>
+                        <button data-bs-dismiss="modal" class="btn btn-close"></button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <form class="ms-5 mt-5 h-100 w-100">
+                            <div class="d-flex">
+                                <div class="con1 col-4">
+                                    <div class="text-center mt-2">
+                                       <span class="h2 fw-bold text-dark"> Login To Your Account</span>
+                                    </div>
+                                    <div class="text-center mt-2">
+                                        Login Using Social Network
+                                    </div>
+                                    <div class="text-center mt-2 h3">
+                                        <span class="bi bi-facebook"></span>
+                                        <span class="bi bi-google text-danger"></span>
+                                        <span class="bi bi-linkedin"></span>
+                        
+                                    </div>
+                                    <div class="text-center mt-2">
+                                        Or
+                                    </div>
+                                    <div class="p-3">
+                                        <input type="Email"  placeholder="Email...." name="user-email" class="form-control">
+                                    </div>
+                                    <div class="p-3">
+                                        <input type="password" placeholder="password..."  name="user-password" class="form-control">
+                                    </div>
+                                    <div class="mb-4 text-center">
+                                        <button class="btn btn-info form-control w-50 ">sign in</button>
+                                </div>
+                        
+                                </div>
+                    
+                    
+                                    <div class="con col-5 border-5">
+                                    <div class="text-center mt-5">
+                                        <span class="fw-bold h1 text-white">NEW HERE!</span>
+                                    </div>
+                                    <div class="text-center mt-2 p-2">
+                                        <span class="h4 fw-bold text-white">sign up and discover a great amount of new oppurtunities</span>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <button class="btn btn-dark rounded-pill w-50 ">sign up</button>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        
+                            
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-warning">cancel</button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+
+        
+       
     </login>
     <footer>
         <button class="btn btn-dark w-100 text-white"><a href="http://127.0.0.1:5500/my_portfolio/public/amazon.html" class="text-white">Back to top</a></button>
